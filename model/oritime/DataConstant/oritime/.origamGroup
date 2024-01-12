@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x:file
+  xmlns:x="http://schemas.origam.com/model-persistence/1.0.0"
+  xmlns:g="http://schemas.origam.com/Origam.Schema.SchemaItemGroup/6.0.0">
+  <g:group
+    x:id="b69a9a04-7f27-48cf-a326-917c7eecb811"
+    x:isFolder="true"
+    g:name="oritime"
+    g:rootItemType="DataConstant" />
+</x:file>

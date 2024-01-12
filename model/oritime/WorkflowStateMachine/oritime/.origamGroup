@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x:file
+  xmlns:x="http://schemas.origam.com/model-persistence/1.0.0"
+  xmlns:g="http://schemas.origam.com/Origam.Schema.SchemaItemGroup/6.0.0">
+  <g:group
+    x:id="3ea9a93a-0c0d-4fbf-9b75-8f98ed305bf1"
+    x:isFolder="true"
+    g:name="oritime"
+    g:rootItemType="WorkflowStateMachine" />
+</x:file>
