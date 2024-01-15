@@ -7,7 +7,7 @@
     x:id="d2e71a6d-66a0-4291-b83f-0049e2abfcea"
     x:isFolder="true"
     p:name="oritime"
-    p:version="1.0.0">
+    p:version="1.0.1">
     <pr:packageReference
       x:id="d4cd7775-2ace-4d9e-a1ab-2cee08603cf0"
       pr:referencedPackage="Root Menu/.origamPackage#b9ab12fe-7f7d-43f7-bedc-93747647d6e4" />
