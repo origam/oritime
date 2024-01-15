@@ -2,11 +2,38 @@
 <x:file
   xmlns:x="http://schemas.origam.com/model-persistence/1.0.0"
   xmlns:asi="http://schemas.origam.com/Origam.Schema.AbstractSchemaItem/6.0.0"
-  xmlns:dv="http://schemas.origam.com/Origam.Schema.DeploymentModel.DeploymentVersion/6.0.0">
+  xmlns:ausa="http://schemas.origam.com/Origam.Schema.DeploymentModel.AbstractUpdateScriptActivity/6.0.0"
+  xmlns:dv="http://schemas.origam.com/Origam.Schema.DeploymentModel.DeploymentVersion/6.0.0"
+  xmlns:scusa="http://schemas.origam.com/Origam.Schema.DeploymentModel.ServiceCommandUpdateScriptActivity/6.0.0">
   <dv:DeploymentVersion
     asi:abstract="false"
     dv:deploymentDependenciesCsv="&#xD;&#xA;147fa70d-6519-4393-b5d0-87931f9fd609, 5.3.1&#xD;&#xA;951f2cda-2867-4b99-8824-071fa8749ead, 5.4.1&#xD;&#xA;b9ab12fe-7f7d-43f7-bedc-93747647d6e4, 1.2.3"
     x:id="84d7cd00-7f8e-4fb0-b9ae-32dbc1f54a6b"
     asi:name="1.0.0"
-    dv:version="1.0.0" />
+    dv:version="1.0.0">
+    <scusa:DeploymentUpdateScriptActivity
+      asi:abstract="false"
+      ausa:activityOrder="20"
+      scusa:commandText="-***-ExternalFile:1.0.0.origam___commandText___718d4eeb-a608-45c1-a4f8-ef50344d5a70.txt"
+      x:id="718d4eeb-a608-45c1-a4f8-ef50344d5a70"
+      asi:name="00020_Database_Entity_Task"
+      scusa:platform="MsSql"
+      scusa:service="Root/Service/DataService.origam#DataService/bbd7bd32-d40b-441a-bb5b-0b0fa89169d4" />
+    <scusa:DeploymentUpdateScriptActivity
+      asi:abstract="false"
+      ausa:activityOrder="10"
+      scusa:commandText="-***-ExternalFile:1.0.0.origam___commandText___d3cab269-cd16-4531-80ff-5cb491553c64.txt"
+      x:id="d3cab269-cd16-4531-80ff-5cb491553c64"
+      asi:name="00010_Database_Entity_Project"
+      scusa:platform="MsSql"
+      scusa:service="Root/Service/DataService.origam#DataService/bbd7bd32-d40b-441a-bb5b-0b0fa89169d4" />
+    <scusa:DeploymentUpdateScriptActivity
+      asi:abstract="false"
+      ausa:activityOrder="30"
+      scusa:commandText="-***-ExternalFile:1.0.0.origam___commandText___dc1355da-0ac1-459e-b087-079bfef2f860.txt"
+      x:id="dc1355da-0ac1-459e-b087-079bfef2f860"
+      asi:name="00030_AddRole_FRM_Task"
+      scusa:platform="MsSql"
+      scusa:service="Root/Service/DataService.origam#DataService/bbd7bd32-d40b-441a-bb5b-0b0fa89169d4" />
+  </dv:DeploymentVersion>
 </x:file>
