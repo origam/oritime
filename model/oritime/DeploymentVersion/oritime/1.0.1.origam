@@ -13,6 +13,22 @@
     dv:version="1.0.1">
     <scusa:DeploymentUpdateScriptActivity
       asi:abstract="false"
+      ausa:activityOrder="30"
+      scusa:commandText="-***-ExternalFile:1.0.1.origam___commandText___56a44cea-389e-4e51-995a-52bba2ed978e.txt"
+      x:id="56a44cea-389e-4e51-995a-52bba2ed978e"
+      asi:name="00030_Database_Entity_Time"
+      scusa:platform="MsSql"
+      scusa:service="Root/Service/DataService.origam#DataService/bbd7bd32-d40b-441a-bb5b-0b0fa89169d4" />
+    <scusa:DeploymentUpdateScriptActivity
+      asi:abstract="false"
+      ausa:activityOrder="20"
+      scusa:commandText="-***-ExternalFile:1.0.1.origam___commandText___9ae7a3b6-5e6b-410c-94da-a35c14e8e427.txt"
+      x:id="9ae7a3b6-5e6b-410c-94da-a35c14e8e427"
+      asi:name="00020_AddRole_FRM_Time"
+      scusa:platform="MsSql"
+      scusa:service="Root/Service/DataService.origam#DataService/bbd7bd32-d40b-441a-bb5b-0b0fa89169d4" />
+    <scusa:DeploymentUpdateScriptActivity
+      asi:abstract="false"
       ausa:activityOrder="10"
       scusa:commandText="-***-ExternalFile:1.0.1.origam___commandText___eb61b074-947c-4d96-8292-50e93f05a06b.txt"
       x:id="eb61b074-947c-4d96-8292-50e93f05a06b"
