@@ -1,0 +1,1 @@
+﻿ALTER TABLE [TimeEntry] ADD [TimeFrom] DateTime NULL

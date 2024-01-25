@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x:file
+  xmlns:x="http://schemas.origam.com/model-persistence/1.0.0"
+  xmlns:ade="http://schemas.origam.com/Origam.Schema.EntityModel.AbstractDataEntity/6.0.0"
+  xmlns:adec="http://schemas.origam.com/Origam.Schema.EntityModel.AbstractDataEntityColumn/6.0.0"
+  xmlns:asi="http://schemas.origam.com/Origam.Schema.AbstractSchemaItem/6.0.0"
+  xmlns:fmi="http://schemas.origam.com/Origam.Schema.EntityModel.FieldMappingItem/6.0.0"
+  xmlns:sia="http://schemas.origam.com/Origam.Schema.SchemaItemAncestor/6.0.0"
+  xmlns:tmi="http://schemas.origam.com/Origam.Schema.EntityModel.TableMappingItem/6.0.0">
+  <tmi:DataEntity
+    asi:abstract="false"
+    ade:audit="None"
+    tmi:databaseObjectType="Table"
+    tmi:generateDeploymentScript="true"
+    x:id="781221fe-7b1d-429b-8fd0-5692e0422c70"
+    tmi:mappedObjectName="TimeEntry"
+    asi:name="TimeEntry"
+    ade:readOnly="false">
+    <fmi:DataEntityColumn
+      asi:abstract="false"
+      adec:allowNulls="false"
+      adec:autoIncrement="false"
+      adec:dataType="UniqueIdentifier"
+      adec:defaultLookup="oritime/DataLookup/oritime/Task.origam#Task/c3ed1161-fe2f-49ec-9a76-83901864939a"
+      adec:excludeFromAllFields="false"
+      fmi:excludeFromAuditing="false"
+      adec:foreignKeyEntity="oritime/DataEntity/oritime/Task.origam#Task/9a34622e-200d-4c7d-9ada-d758c5c2211d"
+      adec:foreignKeyField="Root/DataEntity/__Origam General Interfaces/IOrigamEntity2.origam#IOrigamEntity2/Id/c54413b6-eb88-49c8-a7ff-3bb942c1984e"
+      x:id="449213a5-c414-443d-b6df-bfe68bf6180f"
+      adec:isPrimaryKey="false"
+      adec:label="Task"
+      fmi:mappedColumnName="refTaskId"
+      asi:name="refTaskId"
+      adec:onCopyAction="Copy"
+      adec:xmlMappingType="Attribute" />
+    <fmi:DataEntityColumn
+      asi:abstract="false"
+      adec:allowNulls="true"
+      adec:autoIncrement="false"
+      adec:dataType="Integer"
+      adec:excludeFromAllFields="false"
+      fmi:excludeFromAuditing="false"
+      x:id="54de66f5-c949-4aea-a1e7-d7846c862cbc"
+      adec:isPrimaryKey="false"
+      fmi:mappedColumnName="Minutes"
+      asi:name="Minutes"
+      adec:onCopyAction="Copy"
+      adec:xmlMappingType="Attribute" />
+    <fmi:DataEntityColumn
+      asi:abstract="false"
+      adec:allowNulls="false"
+      adec:autoIncrement="false"
+      adec:dataType="UniqueIdentifier"
+      adec:defaultLookup="oritime/DataLookup/oritime/Project.origam#Project/36e9d0bd-dc8c-4788-b9d4-5c20cd6db43f"
+      adec:excludeFromAllFields="false"
+      fmi:excludeFromAuditing="false"
+      adec:foreignKeyEntity="oritime/DataEntity/oritime/Project.origam#Project/b3b0ed57-0ae7-4059-b736-b1e3b0ef2135"
+      adec:foreignKeyField="Root/DataEntity/__Origam General Interfaces/IOrigamEntity2.origam#IOrigamEntity2/Id/c54413b6-eb88-49c8-a7ff-3bb942c1984e"
+      x:id="5ba7c80b-b93e-4c46-bb1d-1d401f489fb8"
+      adec:isPrimaryKey="false"
+      adec:label="Project"
+      fmi:mappedColumnName="refProjectId"
+      asi:name="refProjectId"
+      adec:onCopyAction="Copy"
+      adec:xmlMappingType="Attribute" />
+    <fmi:DataEntityColumn
+      asi:abstract="false"
+      adec:allowNulls="true"
+      adec:autoIncrement="false"
+      adec:dataType="Date"
+      adec:excludeFromAllFields="false"
+      fmi:excludeFromAuditing="false"
+      x:id="9d9c7867-66f4-4415-b530-3863e80f58d2"
+      adec:isPrimaryKey="false"
+      fmi:mappedColumnName="TimeFrom"
+      asi:name="TimeFrom"
+      adec:onCopyAction="Copy"
+      adec:xmlMappingType="Attribute" />
+    <sia:ancestor
+      sia:ancestor="Root/DataEntity/__Origam General Interfaces/IOrigamEntity2.origam#IOrigamEntity2/28c21d99-785a-4cc5-bce9-62dca7b852c6"
+      x:id="a43ec83c-a501-45c5-92f9-f00fd024a557" />
+  </tmi:DataEntity>
+</x:file>

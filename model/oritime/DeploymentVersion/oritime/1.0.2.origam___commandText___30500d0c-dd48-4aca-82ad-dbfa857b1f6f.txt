@@ -1,0 +1,2 @@
+﻿DELETE FROM [OrigamRoleOrigamApplicationRole] WHERE [refOrigamApplicationRoleId]='3d9d745f-ee01-48a3-bb33-ba5402417480'
+DELETE FROM [OrigamApplicationRole] WHERE [Id]='3d9d745f-ee01-48a3-bb33-ba5402417480'

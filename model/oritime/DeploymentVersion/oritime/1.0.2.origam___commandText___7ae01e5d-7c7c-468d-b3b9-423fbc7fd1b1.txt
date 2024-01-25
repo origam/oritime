@@ -1,0 +1,8 @@
+﻿ALTER TABLE [TimeEntry] ADD CONSTRAINT [FK_TimeEntry_refProjectId_Project]
+	FOREIGN KEY (
+		[refProjectId]
+	)
+
+	REFERENCES [Project] (
+		[Id]
+	);

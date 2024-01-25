@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x:file
+  xmlns:x="http://schemas.origam.com/model-persistence/1.0.0"
+  xmlns:asi="http://schemas.origam.com/Origam.Schema.AbstractSchemaItem/6.0.0"
+  xmlns:aws="http://schemas.origam.com/Origam.Schema.WorkflowModel.AbstractWorkflowStep/6.0.2"
+  xmlns:cr="http://schemas.origam.com/Origam.Schema.WorkflowModel.ContextReference/6.0.0"
+  xmlns:cs="http://schemas.origam.com/Origam.Schema.WorkflowModel.ContextStore/6.0.0"
+  xmlns:dsr="http://schemas.origam.com/Origam.Schema.EntityModel.DataStructureReference/6.0.0"
+  xmlns:smcp="http://schemas.origam.com/Origam.Schema.WorkflowModel.ServiceMethodCallParameter/6.0.0"
+  xmlns:smct="http://schemas.origam.com/Origam.Schema.WorkflowModel.ServiceMethodCallTask/6.0.0"
+  xmlns:w="http://schemas.origam.com/Origam.Schema.WorkflowModel.Workflow/6.0.2"
+  xmlns:wt="http://schemas.origam.com/Origam.Schema.WorkflowModel.WorkflowTask/6.0.0">
+  <w:Workflow
+    asi:abstract="false"
+    x:id="2ee56b39-321f-46c4-bbb6-029c5374e709"
+    asi:name="StartTimeTracker"
+    w:transactionBehavior="InheritExisting">
+    <cs:ContextStore
+      asi:abstract="false"
+      cs:dataType="Xml"
+      cs:disableConstraints="false"
+      x:id="20db1e3f-24ac-4a30-b7af-e67188c0eac3"
+      cs:isReturnValue="false"
+      asi:name="TimeEntry"
+      cs:structure="oritime/DataStructure/oritime/TimeEntry.origam#TimeEntry/54aec11a-4d46-4ed9-83ed-795a16eac3a4" />
+    <cs:ContextStore
+      asi:abstract="false"
+      cs:dataType="UniqueIdentifier"
+      cs:disableConstraints="false"
+      x:id="9270aeff-8937-4fdb-9e30-d4e466c003dd"
+      cs:isReturnValue="false"
+      asi:name="TimeEntryId" />
+    <smct:WorkflowTask
+      asi:abstract="false"
+      x:id="9f04eb3f-c650-48ce-a3fb-cf875c2e8408"
+      asi:name="0100_LoadData"
+      aws:onFailure="WorkflowFails"
+      wt:outputContextStore="oritime/Workflow/oritime/StartTimeTracker.origam#StartTimeTracker/TimeEntry/20db1e3f-24ac-4a30-b7af-e67188c0eac3"
+      wt:outputMethod="AppendMergeExisting"
+      aws:roles="*"
+      smct:service="Root/Service/DataService.origam#DataService/bbd7bd32-d40b-441a-bb5b-0b0fa89169d4"
+      smct:serviceMethod="Root/Service/DataService.origam#DataService/LoadData/93a3ced9-fafd-4f38-9467-3af1f72b5d62">
+      <smcp:ServiceMethodCallParameter
+        asi:abstract="false"
+        x:id="8f7966d9-479d-4c42-b1fe-52bd64f553ab"
+        asi:name="DataStructure"
+        smcp:serviceMethodParameter="Root/Service/DataService.origam#DataService/LoadData/DataStructure/12495b9d-f2b9-4b70-b14c-7cb67784c9f3">
+        <dsr:DataStructureReference
+          asi:abstract="false"
+          dsr:dataStructure="oritime/DataStructure/oritime/TimeEntry.origam#TimeEntry/54aec11a-4d46-4ed9-83ed-795a16eac3a4"
+          x:id="9f558d80-2d9d-4110-874b-de467655ae3c"
+          dsr:method="oritime/DataStructure/oritime/TimeEntry.origam#TimeEntry/GetId/c19ad535-9afa-4539-ae22-6d5214f8a110"
+          asi:name="TimeEntry" />
+      </smcp:ServiceMethodCallParameter>
+      <smcp:ServiceMethodCallParameter
+        asi:abstract="false"
+        x:id="cfc36eee-65cf-4d41-8e3f-33ad7b3a522d"
+        asi:name="Parameters"
+        smcp:serviceMethodParameter="Root/Service/DataService.origam#DataService/LoadData/Parameters/ff27a2ff-5965-4eed-b6dd-9cd040583d03">
+        <cr:WorkflowContextReference
+          asi:abstract="false"
+          cr:castToDataType="UniqueIdentifier"
+          cr:contextStore="oritime/Workflow/oritime/StartTimeTracker.origam#StartTimeTracker/TimeEntryId/9270aeff-8937-4fdb-9e30-d4e466c003dd"
+          x:id="3708ebdd-035a-4d14-a391-643153f8a8d2"
+          asi:name="TimeEntry_parId"
+          cr:xPath="/" />
+      </smcp:ServiceMethodCallParameter>
+    </smct:WorkflowTask>
+  </w:Workflow>
+</x:file>

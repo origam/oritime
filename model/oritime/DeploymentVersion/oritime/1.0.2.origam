@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x:file
+  xmlns:x="http://schemas.origam.com/model-persistence/1.0.0"
+  xmlns:asi="http://schemas.origam.com/Origam.Schema.AbstractSchemaItem/6.0.0"
+  xmlns:ausa="http://schemas.origam.com/Origam.Schema.DeploymentModel.AbstractUpdateScriptActivity/6.0.0"
+  xmlns:dv="http://schemas.origam.com/Origam.Schema.DeploymentModel.DeploymentVersion/6.0.0"
+  xmlns:scusa="http://schemas.origam.com/Origam.Schema.DeploymentModel.ServiceCommandUpdateScriptActivity/6.0.0">
+  <dv:DeploymentVersion
+    asi:abstract="false"
+    dv:deploymentDependenciesCsv="&#xD;&#xA;147fa70d-6519-4393-b5d0-87931f9fd609, 5.3.1&#xD;&#xA;951f2cda-2867-4b99-8824-071fa8749ead, 5.4.1&#xD;&#xA;b9ab12fe-7f7d-43f7-bedc-93747647d6e4, 1.2.3"
+    x:id="8e2a54c2-7254-45a3-928a-22fb29bc70df"
+    asi:name="1.0.2"
+    dv:version="1.0.2">
+    <scusa:DeploymentUpdateScriptActivity
+      asi:abstract="false"
+      ausa:activityOrder="50"
+      scusa:commandText="-***-ExternalFile:1.0.2.origam___commandText___13e1eaec-4de8-4abf-bee9-c0f62b543697.txt"
+      x:id="13e1eaec-4de8-4abf-bee9-c0f62b543697"
+      asi:name="00050_Database_Field_TimeEntry.refProjectId"
+      scusa:platform="MsSql"
+      scusa:service="Root/Service/DataService.origam#DataService/bbd7bd32-d40b-441a-bb5b-0b0fa89169d4" />
+    <scusa:DeploymentUpdateScriptActivity
+      asi:abstract="false"
+      ausa:activityOrder="20"
+      scusa:commandText="-***-ExternalFile:1.0.2.origam___commandText___30500d0c-dd48-4aca-82ad-dbfa857b1f6f.txt"
+      x:id="30500d0c-dd48-4aca-82ad-dbfa857b1f6f"
+      asi:name="00020_Time_Role_Deletion"
+      scusa:platform="MsSql"
+      scusa:service="Root/Service/DataService.origam#DataService/bbd7bd32-d40b-441a-bb5b-0b0fa89169d4" />
+    <scusa:DeploymentUpdateScriptActivity
+      asi:abstract="false"
+      ausa:activityOrder="60"
+      scusa:commandText="-***-ExternalFile:1.0.2.origam___commandText___7ae01e5d-7c7c-468d-b3b9-423fbc7fd1b1.txt"
+      x:id="7ae01e5d-7c7c-468d-b3b9-423fbc7fd1b1"
+      asi:name="00060_Database_Field_FK_TimeEntry_refProjectId_Project"
+      scusa:platform="MsSql"
+      scusa:service="Root/Service/DataService.origam#DataService/bbd7bd32-d40b-441a-bb5b-0b0fa89169d4" />
+    <scusa:DeploymentUpdateScriptActivity
+      asi:abstract="false"
+      ausa:activityOrder="10"
+      scusa:commandText="-***-ExternalFile:1.0.2.origam___commandText___a0fa404c-0c3d-4ad1-874b-e28e5c2045ae.txt"
+      x:id="a0fa404c-0c3d-4ad1-874b-e28e5c2045ae"
+      asi:name="00010_Time_Entity_Cleanup"
+      scusa:platform="MsSql"
+      scusa:service="Root/Service/DataService.origam#DataService/bbd7bd32-d40b-441a-bb5b-0b0fa89169d4" />
+    <scusa:DeploymentUpdateScriptActivity
+      asi:abstract="false"
+      ausa:activityOrder="70"
+      scusa:commandText="-***-ExternalFile:1.0.2.origam___commandText___ce1780d0-d549-4c48-81c8-f56478d8c60b.txt"
+      x:id="ce1780d0-d549-4c48-81c8-f56478d8c60b"
+      asi:name="00070_Database_Field_TimeEntry.TimeFrom"
+      scusa:platform="MsSql"
+      scusa:service="Root/Service/DataService.origam#DataService/bbd7bd32-d40b-441a-bb5b-0b0fa89169d4" />
+    <scusa:DeploymentUpdateScriptActivity
+      asi:abstract="false"
+      ausa:activityOrder="30"
+      scusa:commandText="-***-ExternalFile:1.0.2.origam___commandText___df43f10b-941a-4b38-97fc-c73fae48b6b4.txt"
+      x:id="df43f10b-941a-4b38-97fc-c73fae48b6b4"
+      asi:name="00030_Database_Entity_TimeEntry"
+      scusa:platform="MsSql"
+      scusa:service="Root/Service/DataService.origam#DataService/bbd7bd32-d40b-441a-bb5b-0b0fa89169d4" />
+    <scusa:DeploymentUpdateScriptActivity
+      asi:abstract="false"
+      ausa:activityOrder="40"
+      scusa:commandText="-***-ExternalFile:1.0.2.origam___commandText___fb56caaf-311a-467c-a7a8-329adc08e6dd.txt"
+      x:id="fb56caaf-311a-467c-a7a8-329adc08e6dd"
+      asi:name="00040_Database_Entity_TimeEntry"
+      scusa:platform="MsSql"
+      scusa:service="Root/Service/DataService.origam#DataService/bbd7bd32-d40b-441a-bb5b-0b0fa89169d4" />
+  </dv:DeploymentVersion>
+</x:file>

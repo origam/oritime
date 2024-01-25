@@ -8,9 +8,9 @@
     asi:abstract="false"
     ami:alwaysOpenNew="false"
     frmi:autoSaveOnListRecordChange="false"
-    ami:displayName="Time"
-    x:id="4a7feba8-8e9a-4d96-997c-c9e5d672be4a"
-    asi:name="Time"
+    ami:displayName="Time Entry"
+    x:id="27c29a36-5d6c-4f82-8da6-bfeaade0ccce"
+    asi:name="TimeEntry"
     ami:openExclusively="false"
     ami:order="100"
     x:parentId="147775f5-451d-4efd-8634-7f27a2cf50a6"
@@ -19,8 +19,8 @@
     frmi:refreshOnFocus="false"
     frmi:refreshPortalAfterSave="false"
     frmi:requestSaveAfterUpdate="false"
-    ami:roles="FRM_Time"
-    frmi:screen="oritime/FormControlSet/oritime/Time.origam#Time/d7131cd5-c837-407f-9556-a5fba8fd6e68" />
+    ami:roles="*"
+    frmi:screen="oritime/FormControlSet/oritime/TimeEntry.origam#TimeEntry/34011ce4-d86b-42e7-8b71-c9746531fec4" />
   <frmi:MenuItem
     asi:abstract="false"
     ami:alwaysOpenNew="false"

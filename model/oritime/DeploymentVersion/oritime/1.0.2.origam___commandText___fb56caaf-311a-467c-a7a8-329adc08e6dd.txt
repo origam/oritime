@@ -1,0 +1,9 @@
+﻿
+ALTER TABLE [TimeEntry] ADD CONSTRAINT [FK_TimeEntry_refTaskId_Task]
+	FOREIGN KEY (
+		[refTaskId]
+	)
+
+	REFERENCES [Task] (
+		[Id]
+	);

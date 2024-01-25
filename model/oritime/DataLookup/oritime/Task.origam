@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x:file
+  xmlns:x="http://schemas.origam.com/model-persistence/1.0.0"
+  xmlns:adl="http://schemas.origam.com/Origam.Schema.LookupModel.AbstractDataLookup/6.0.0"
+  xmlns:asi="http://schemas.origam.com/Origam.Schema.AbstractSchemaItem/6.0.0"
+  xmlns:dsdl="http://schemas.origam.com/Origam.Schema.LookupModel.DataServiceDataLookup/6.0.0">
+  <dsdl:DataLookup
+    asi:abstract="false"
+    adl:alwaysAllowReturnToForm="false"
+    x:id="c3ed1161-fe2f-49ec-9a76-83901864939a"
+    adl:isFilteredServerside="false"
+    adl:isTree="false"
+    adl:listDataStructure="oritime/DataStructure/oritime/LookupTask.origam#LookupTask/d6b58200-b018-4231-adf0-c9fd239c54fa"
+    adl:listDisplayMember="Name"
+    adl:listValueMember="Id"
+    asi:name="Task"
+    adl:searchByFirstColumnOnly="false"
+    adl:suppressEmptyColumns="false"
+    adl:valueDataStructure="oritime/DataStructure/oritime/LookupTask.origam#LookupTask/d6b58200-b018-4231-adf0-c9fd239c54fa"
+    adl:valueDisplayMember="Name"
+    adl:valueMethod="oritime/DataStructure/oritime/LookupTask.origam#LookupTask/GetId/3a19db4c-2622-435e-bf29-5f72a6a0dcf1"
+    adl:valueValueMember="Id" />
+</x:file>

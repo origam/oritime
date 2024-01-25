@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x:file
+  xmlns:x="http://schemas.origam.com/model-persistence/1.0.0"
+  xmlns:adl="http://schemas.origam.com/Origam.Schema.LookupModel.AbstractDataLookup/6.0.0"
+  xmlns:asi="http://schemas.origam.com/Origam.Schema.AbstractSchemaItem/6.0.0"
+  xmlns:dsdl="http://schemas.origam.com/Origam.Schema.LookupModel.DataServiceDataLookup/6.0.0">
+  <dsdl:DataLookup
+    asi:abstract="false"
+    adl:alwaysAllowReturnToForm="false"
+    x:id="36e9d0bd-dc8c-4788-b9d4-5c20cd6db43f"
+    adl:isFilteredServerside="false"
+    adl:isTree="false"
+    adl:listDataStructure="oritime/DataStructure/oritime/Lookups/LookupProject.origam#LookupProject/1850c484-5cb1-48a8-a49c-aa8e4ba23e09"
+    adl:listDisplayMember="Name"
+    adl:listValueMember="Id"
+    asi:name="Project"
+    adl:searchByFirstColumnOnly="false"
+    adl:suppressEmptyColumns="false"
+    adl:valueDataStructure="oritime/DataStructure/oritime/Lookups/LookupProject.origam#LookupProject/1850c484-5cb1-48a8-a49c-aa8e4ba23e09"
+    adl:valueDisplayMember="Name"
+    adl:valueMethod="oritime/DataStructure/oritime/Lookups/LookupProject.origam#LookupProject/GetId/22533c32-46dd-4f1f-a96f-4b720d5ddc5c"
+    adl:valueValueMember="Id" />
+</x:file>
